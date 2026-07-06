@@ -1,0 +1,289 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f4f7fc;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Navigation */
+header{
+    background:#4f46e5;
+    color:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.8rem;
+    font-weight:700;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#ffd166;
+}
+
+/* Hero Section */
+.hero{
+    height:85vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(79,70,229,.85),
+    rgba(99,102,241,.85)),
+    url("../images/study.jpg") center/cover;
+    color:white;
+}
+
+.hero-content{
+    width:80%;
+    max-width:700px;
+}
+
+.hero h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.1rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:#10b981;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#059669;
+    transform:translateY(-3px);
+}
+
+/* General Sections */
+section{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:70px 0;
+}
+
+section h2{
+    text-align:center;
+    color:#4f46e5;
+    margin-bottom:35px;
+    font-size:2rem;
+}
+
+/* Motivation */
+blockquote{
+    background:white;
+    border-left:6px solid #4f46e5;
+    padding:30px;
+    font-style:italic;
+    font-size:1.2rem;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+/* Date & Time */
+.datetime{
+    text-align:center;
+}
+
+#date,
+#time{
+    font-size:1.3rem;
+    margin:10px;
+    font-weight:600;
+}
+
+/* Cards */
+.tip-container,
+.feature-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.tip-card,
+.feature-card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.tip-card:hover,
+.feature-card:hover{
+    transform:translateY(-8px);
+}
+
+.tip-card h3,
+.feature-card h3{
+    color:#4f46e5;
+    margin-bottom:15px;
+}
+
+/* Forms */
+form{
+    max-width:650px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0 20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:1rem;
+    font-family:Poppins,sans-serif;
+}
+
+textarea{
+    resize:vertical;
+}
+
+button{
+    background:#4f46e5;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:1rem;
+    transition:.3s;
+}
+
+button:hover{
+    background:#3730a3;
+}
+
+/* Music Player */
+.music-player{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    margin-bottom:30px;
+    text-align:center;
+}
+
+audio{
+    width:100%;
+    margin-top:15px;
+}
+
+/* Notes */
+.notes-area{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+/* Checklist */
+.checklist{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.checklist ul{
+    list-style:none;
+    margin-top:20px;
+}
+
+.checklist li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#eef2ff;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+}
+
+/* Footer */
+footer{
+    background:#4f46e5;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero{
+        height:70vh;
+    }
+
+    .hero h2{
+        font-size:2.2rem;
+    }
+
+    section{
+        padding:50px 0;
+    }
+}
