@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudySpace | Study Tools</title>
+
+    <meta name="description" content="Use StudySpace's music player, notes, and task checklist to boost your productivity.">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <h1 class="logo">
+            <i class="fas fa-book-open"></i> StudySpace
+        </h1>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tools.html">Study Tools</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+<section>
+
+    <h2>🎵 Study Music</h2>
+
+    <div class="music-player">
+
+        <audio id="player" controls>
+            <source src="music/lofi.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <br><br>
+
+        <button onclick="playSong()">▶ Play</button>
+
+        <button onclick="pauseSong()">⏸ Pause</button>
+
+        <button onclick="nextSong()">⏭ Next</button>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>📝 Notes</h2>
+
+    <div class="notes-area">
+
+        <textarea
+            id="notes"
+            rows="10"
+            placeholder="Write your study notes here..."></textarea>
+
+        <br><br>
+
+        <button id="saveNotes">Save Notes</button>
+
+        <button id="clearNotes">Clear Notes</button>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>✅ Task Checklist</h2>
+
+    <div class="checklist">
+
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter a new task">
+
+        <button id="addTask">
+            Add Task
+        </button>
+
+        <ul id="taskList"></ul>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+    <p>&copy; 2026 StudySpace. All Rights Reserved.</p>
+
+</footer>
+
+<script src="script.js"></script>
+<script src="music.js"></script>
+<script src="notes.js"></script>
+<script src="tasks.js"></script>
+
+</body>
+</html>
